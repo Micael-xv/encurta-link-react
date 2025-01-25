@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Links from './pages/Links'
 
-funciton RouterApp() {
+function RouterApp() {
   return (
     <BrowserRouter>
       <Routes>
@@ -13,3 +13,5 @@ funciton RouterApp() {
     </BrowserRouter>
   )
 }
+
+export default RouterApp;
