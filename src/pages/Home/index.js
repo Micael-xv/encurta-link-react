@@ -1,7 +1,11 @@
 export default function Home() {
   return (
-    <div>
-      <h1>Pagina home</h1>
+    <div className="container-home">
+      
+      <div className="logo">
+
+      </div>
+
     </div>
   );
 }
