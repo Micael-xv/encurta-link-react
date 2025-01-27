@@ -23,6 +23,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: slideY 2s;
+}
+/* Animacao subindo area input */
+@keyframes slideY {
+  from {
+    transform: translateY(90px);
+  }
+  to {
+    transform: translateY(0px);
+  }
 }
 
 .container-home {
@@ -71,4 +81,36 @@
   color: #000;
   font-weight: bold;
   margin-top: 8px;
+  transition: transform 0.7s;
+}
+
+.area-input button:hover {
+  transform: scale(1.08);
+}
+
+@media (max-width: 615px) {
+  .logo h1 {
+    font-size: 40px;
+  }
+
+  .logo span {
+    font-size: 16px;
+  }
+
+  .area-input {
+    width: 85%;
+  }
+
+  .area-input div {
+    width: 100%;
+    height: 36px;
+  }
+
+  .area-input input {
+    font-size: 16px;
+  }
+
+  .area-input button {
+    font-size: 14px;
+  }
 }

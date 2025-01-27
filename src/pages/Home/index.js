@@ -6,8 +6,8 @@ export default function Home() {
     <div className="container-home">
       
       <div className="logo">
-        <h1>Sujeito Link</h1>
-        <span>Cole seu link para encurtar</span>
+        <h1>SujeitoLink</h1>
+        <span>Cole seu link para encurtar👇</span>
       </div>
 
       <div className="area-input">
