@@ -6,7 +6,6 @@ export default function Home() {
     <div className="container-home">
       
       <div className="logo">
-        <img src="./hackerone.svg" alt="Logo" className="tamanho-logo"/>
         <h1>Sujeito Link</h1>
         <span>Cole seu link para encurtar</span>
       </div>
@@ -15,8 +14,8 @@ export default function Home() {
         <div>
           <FiLink size={24} color="#FFF" />
           <input type="text" placeholder="Cole seu link aqui" />
-          <button>Encurtar Link</button>
         </div>
+          <button>Encurtar Link</button>
       </div>
 
     </div>
