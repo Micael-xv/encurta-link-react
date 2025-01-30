@@ -23,7 +23,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: slideY 2s;
+  animation: slideY 2s; /* Chama animação, o slideY é o nome da animação */
 }
 /* Animacao subindo area input */
 @keyframes slideY {
@@ -34,7 +34,6 @@
     transform: translateY(0px);
   }
 }
-
 .container-home {
   width: 100%;
   height: 100vh;
