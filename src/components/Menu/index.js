@@ -1,6 +1,6 @@
 import './menu.css';
 import { BsInstagram } from 'react-icons/bs';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 export default function Menu() {
   return (
@@ -8,9 +8,9 @@ export default function Menu() {
       <a className="social" href="https://www.instagram.com/micael_trevisan">
         <BsInstagram size={24} color="#FFF" /> 
       </a>
-      <links className="menu-item" to="/links">
+      <Link className="menu-item" to="/links">
         Meus Links
-      </links>
+      </Link>
     </div>
   )
 }
