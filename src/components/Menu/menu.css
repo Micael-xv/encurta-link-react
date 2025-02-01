@@ -21,4 +21,10 @@
   background-color: #fff;
   padding: 12px 24px;
   border-radius: 4px;
+  transition: transform 0.7s;
 }
+
+.menu-item:hover {
+  transform: scale(1.08);
+}
+

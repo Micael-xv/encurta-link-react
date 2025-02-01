@@ -8,6 +8,14 @@
   flex-direction: row;
 }
 
+.back {
+  transition: transform 0.7s;
+}
+
+.back:hover{
+  transform: scaleX(1.25);
+}
+
 .links-header svg {
   margin-right: 14px;
 }
