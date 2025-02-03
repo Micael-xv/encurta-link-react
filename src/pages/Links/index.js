@@ -16,7 +16,7 @@ export default function Links() {
       <div className="links-items">
         <button className="link">
           <FiLink size={18} color="#fff" />
-          https://rocketseat.com.br
+          <p>https://sujeitoprogramador.com</p>
         </button>
         <button className="link-delete">
           <FiTrash size={18} color="red" />
