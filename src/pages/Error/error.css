@@ -1,0 +1,30 @@
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.not {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 100px;
+  color: #fff;
+}
+
+.found {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 50px;
+  color: #fff;
+}
+
+.error a {
+  color: #132742;
+  background-color: #fff;
+  text-decoration: none; /* tira o sublinhado do nome */
+  padding: 12px 18px;
+  border-radius: 4px;
+  margin: 14px 0;
+  font-weight: bold;
+}
