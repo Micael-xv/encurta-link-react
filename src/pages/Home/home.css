@@ -80,11 +80,11 @@
   color: #000;
   font-weight: bold;
   margin-top: 8px;
-  transition: transform 0.7s;
+  transition: transform 0.7s; 
 }
 
 .area-input button:hover {
-  transform: scale(1.08);
+  transform: scale(1.08); /* esse é o movimento que o botão vai fazer */
 }
 
 @media (max-width: 615px) {
