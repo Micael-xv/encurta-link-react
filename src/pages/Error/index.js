@@ -4,9 +4,8 @@ import { Link } from 'react-router-dom';
 export default function Error() {
   return (
     <div className="error">
-      <h1 className='not'>404</h1>
-      <h1 className='found'>Page Not Found</h1>
-      
+      <img src="./not.png" alt="Página não encontrada"/>
+      <h1>Página não encontrada!</h1>
       <Link 
         to='/'
       >

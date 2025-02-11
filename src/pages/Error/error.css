@@ -1,22 +1,10 @@
 .error {
+  height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-.not {
-  text-align: center;
-  margin-top: 100px;
-  font-size: 100px;
-  color: #fff;
-}
-
-.found {
-  text-align: center;
-  margin-top: 100px;
-  font-size: 50px;
-  color: #fff;
 }
 
 .error a {
@@ -27,4 +15,26 @@
   border-radius: 4px;
   margin: 14px 0;
   font-weight: bold;
+}
+
+.error img {
+  max-width: 590px;
+  margin: -90px 0;
+  animation: liquidificador 1.5s;
+}
+
+/* Animação liquidificador */
+@keyframes liquidificador {
+  10%, 90%{
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80%{
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70%{
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60%{
+    transform: translate3d(4px, 0, 0);
+  }
 }
