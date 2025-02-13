@@ -4,14 +4,28 @@ import './home.css';
 
 import Menu from '../../components/Menu';
 import LinkItem from '../../components/LinkItem';
+import api from '../../services/api';
 
 export default function Home() {
   const [link, setLink] = useState('');
   const [showModal, setShowModal] = useState(false);
-  
-  function handleShortLink() {
+  const [data, setData] = useState({});
+
+  async function handleShortLink() {
     // Função para encurtar o link
-    setShowModal(true);
+    try {
+      const response = await api.post('/shorten', {
+        long_url: link
+      })
+
+      setData(response.data);
+      setShowModal(true);
+
+      setLink('');
+    } catch (error) {
+      alert('Ops! Ocorreu um erro ao encurtar o link, tente novamente.');
+      setLink('');
+    }
   }
 
   return (
@@ -38,7 +52,10 @@ export default function Home() {
       <Menu />
       
       { showModal && (
-        <LinkItem/>
+        <LinkItem
+          closeModal={() => setShowModal(false)}
+          content={data} // Passando o conteúdo do link encurtado
+        />
       )}
 
     </div>
