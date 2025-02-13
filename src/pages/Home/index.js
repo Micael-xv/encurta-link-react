@@ -1,14 +1,17 @@
 import { useState } from 'react';
 import { FiLink } from 'react-icons/fi';
 import './home.css';
+
 import Menu from '../../components/Menu';
+import LinkItem from '../../components/LinkItem';
 
 export default function Home() {
   const [link, setLink] = useState('');
+  const [showModal, setShowModal] = useState(false);
   
   function handleShortLink() {
     // Função para encurtar o link
-    alert("Meu link: " + link);
+    setShowModal(true);
   }
 
   return (
@@ -33,6 +36,10 @@ export default function Home() {
       </div>
 
       <Menu />
+      
+      { showModal && (
+        <LinkItem/>
+      )}
 
     </div>
   );
